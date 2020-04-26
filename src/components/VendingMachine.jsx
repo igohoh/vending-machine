@@ -23,7 +23,7 @@ const VendingMachine = ({ value, setValue, errorMessage, setErrorMessage }) => {
       setErrorMessage("Недостаточно средств");
       return;
     }
-    setErrorMessage("");
+    setErrorMessage("Спасибо!");
     setStock((prevState) => ({ ...prevState, [name]: stock[name] - 1 }));
     setValue(value - PRICES[name]);
   };
